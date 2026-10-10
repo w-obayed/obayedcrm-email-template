@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obayed CRM - Review Automation</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f0f0f0; padding: 20px; }
+      .email-container { max-width: 600px; margin: 0 auto; background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+      .header { background-color: #fff; padding: 25px; text-align: center; }
+      .header img { width: 180px; max-width: 100%; display: block; margin: 0 auto; }
+      .content { background-color: #1e1b4b; padding: 35px 30px; color: #ffffff; line-height: 1.7; }
+      .greeting { font-size: 20px; font-weight: 700; margin-bottom: 18px; color: #ffffff; }
+      .intro-text { font-size: 15px; font-weight: 400; margin-bottom: 20px; color: #e2e8f0; }
+      .system-banner { text-align: center; margin: 25px 0; }
+      .system-banner img { width: 100%; max-width: 100%; height: auto; border-radius: 8px; display: block; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+      .features { margin: 25px 0; }
+      .feature-title { font-weight: 700; font-size: 16px; margin-bottom: 14px; color: #ffffff; }
+      .feature-item { display: block; margin-bottom: 10px; margin-left: 5px; font-size: 15px; color: #e2e8f0; }
+      .feature-item::before { content: "✓"; color: #bf0a0a; font-weight: 700; margin-right: 10px; font-size: 15px; }
+      .trial-box { background-color: #28235f; border-radius: 8px; padding: 20px; margin: 25px 0; font-size: 15px; border-left: 4px solid #bf0a0a; }
+      .trial-box strong { font-size: 16px; color: #ffffff; }
+      .closing { margin: 25px 0; }
+      .closing p { font-size: 15px; margin-bottom: 4px; color: #e2e8f0; }
+      .cta-buttons { text-align: center; margin: 30px 0 20px; }
+      .cta-button { background-color: #bf0a0a; color: #ffffff !important; padding: 12px 28px; border-radius: 8px; font-size: 15px; font-weight: 600; text-decoration: none; display: inline-block; margin: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+      .cta-button:hover { background-color: #990808; }
+      .social-links { text-align: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+      .social-links-table { margin: 0 auto; }
+      .social-links-table td { padding: 0 10px; }
+      .social-links img { width: 22px; height: 22px; opacity: 0.8; }
+      @media only screen and (max-width: 600px) {
+        body { padding: 10px; }
+        .content { padding: 25px 20px; }
+        .cta-button { display: block; margin: 10px auto; max-width: 280px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <img src="https://w-obayed.github.io/obayed/image/logo-o.png" alt="OBAYED" />
+      </div>
+      <div class="content">
+        <h3 class="greeting">Hi {{first_name}},</h3>
+        <p class="intro-text">
+          More reviews build instant online trust, and more trust translates directly into higher sales for your local business.
+        </p>
+        <div class="system-banner">
+          <img src="./images/banner.png" alt="End-to-End Growth System Flowchart" />
+        </div>
+        <p class="intro-text">
+          Stop chasing clients manually for feedback. Our automated review collection engine triggers review requests at the exact right moment after a job is completed.
+        </p>
+        <div class="features">
+          <h3 class="feature-title">What review automation gives you:</h3>
+          <div class="feature-item">Automated SMS & email review requests</div>
+          <div class="feature-item">Smart filter to catch negative feedback privately</div>
+          <div class="feature-item">Direct links to Google and Facebook review profiles</div>
+          <div class="feature-item">Higher local search ranking visibility</div>
+          <div class="feature-item">Consistent social proof builder on autopilot</div>
+        </div>
+        <div class="trial-box">
+          <strong>Test Review Automation Free for 14 Days.</strong><br />
+          Watch your 5-star Google ratings climb automatically without lifting a finger.
+        </div>
+        <p class="intro-text">
+          Want to see how easy it is to automate your reputation? Reply <strong>"Reviews"</strong> and I’ll get you set up.
+        </p>
+        <div class="closing">
+          <p>Best regards,</p>
+          <p><strong>Obayed</strong></p>
+        </div>
+        <div class="cta-buttons">
+          <a href="https://wa.me/8801846360929" class="cta-button" target="_blank">Chat on WhatsApp</a>
+          <a href="https://obayedcrm.com/" class="cta-button" target="_blank">View Business Profile</a>
+        </div>
+        <div class="social-links">
+          <table class="social-links-table" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td><a href="https://www.linkedin.com/in/w-obayed" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a></td>
+              <td><a href="https://github.com/w-obayed" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a></td>
+              <td><a href="https://www.youtube.com/@obayed-w" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a></td>
+              <td><a href="https://obayedcrm.com/" target="_blank"><img src="https://www.freeiconspng.com/uploads/website-icon-8.png" alt="Website" /></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
